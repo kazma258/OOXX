@@ -212,6 +212,7 @@ namespace OOXX
 
 		private bool CheckWin(bool player)
 		{
+			Debug.WriteLine(player ? "玩家chkWin" : "電腦chkWin");
 			bool playerWinFlag = false, npcWinFlag = false;
 			if(player)
 				playerWinFlag = ChkLine(true);
@@ -235,25 +236,29 @@ namespace OOXX
 			{
 				if (arr[i, 0] + arr[i, 1] + arr[i, 2] == chkNum)
 				{
+					bool ChkLineFlag = true;
 					for(int j = 0; j < 3; j++)
 					{
 						if(arr[i, j] != (player ? 1: 2))
 						{
-							return false;
+							ChkLineFlag = false;
+							break;
 						}
 					}
-					return true;
+					if(ChkLineFlag) return true;
 				}
 				if (arr[0, i] + arr[1, i] + arr[2, i] == chkNum)
 				{
-					for(int j=0; j < 3; j++)
+					bool ChkLineFlag = true;
+					for (int j=0; j < 3; j++)
 					{
 						if (arr[j, i] != (player ? 1: 2))
 						{
-							return false;
+							ChkLineFlag = false;
+							break;
 						}
 					}
-					return true;
+					if(ChkLineFlag) return true;
 				}
 			}
 			if (arr[0, 0] + arr[1, 1] + arr[2, 2] == chkNum)

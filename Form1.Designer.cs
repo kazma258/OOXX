@@ -48,18 +48,20 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("微軟正黑體", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.label1.Location = new System.Drawing.Point(254, 25);
+			this.label1.Location = new System.Drawing.Point(339, 31);
+			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(168, 47);
+			this.label1.Size = new System.Drawing.Size(213, 60);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "井字遊戲";
 			// 
 			// startGame
 			// 
 			this.startGame.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.startGame.Location = new System.Drawing.Point(182, 75);
+			this.startGame.Location = new System.Drawing.Point(243, 94);
+			this.startGame.Margin = new System.Windows.Forms.Padding(4);
 			this.startGame.Name = "startGame";
-			this.startGame.Size = new System.Drawing.Size(210, 37);
+			this.startGame.Size = new System.Drawing.Size(280, 46);
 			this.startGame.TabIndex = 1;
 			this.startGame.Text = "開始遊戲";
 			this.startGame.UseVisualStyleBackColor = true;
@@ -67,81 +69,90 @@
 			// 
 			// button_00
 			// 
-			this.button_00.Location = new System.Drawing.Point(182, 126);
+			this.button_00.Location = new System.Drawing.Point(243, 158);
+			this.button_00.Margin = new System.Windows.Forms.Padding(4);
 			this.button_00.Name = "button_00";
-			this.button_00.Size = new System.Drawing.Size(100, 100);
+			this.button_00.Size = new System.Drawing.Size(133, 125);
 			this.button_00.TabIndex = 2;
 			this.button_00.UseVisualStyleBackColor = true;
 			this.button_00.Click += new System.EventHandler(this.GameButton_Click);
 			// 
 			// button_01
 			// 
-			this.button_01.Location = new System.Drawing.Point(288, 126);
+			this.button_01.Location = new System.Drawing.Point(384, 158);
+			this.button_01.Margin = new System.Windows.Forms.Padding(4);
 			this.button_01.Name = "button_01";
-			this.button_01.Size = new System.Drawing.Size(100, 100);
+			this.button_01.Size = new System.Drawing.Size(133, 125);
 			this.button_01.TabIndex = 2;
 			this.button_01.UseVisualStyleBackColor = true;
 			this.button_01.Click += new System.EventHandler(this.GameButton_Click);
 			// 
 			// button_02
 			// 
-			this.button_02.Location = new System.Drawing.Point(394, 126);
+			this.button_02.Location = new System.Drawing.Point(525, 158);
+			this.button_02.Margin = new System.Windows.Forms.Padding(4);
 			this.button_02.Name = "button_02";
-			this.button_02.Size = new System.Drawing.Size(100, 100);
+			this.button_02.Size = new System.Drawing.Size(133, 125);
 			this.button_02.TabIndex = 2;
 			this.button_02.UseVisualStyleBackColor = true;
 			this.button_02.Click += new System.EventHandler(this.GameButton_Click);
 			// 
 			// button_10
 			// 
-			this.button_10.Location = new System.Drawing.Point(182, 232);
+			this.button_10.Location = new System.Drawing.Point(243, 290);
+			this.button_10.Margin = new System.Windows.Forms.Padding(4);
 			this.button_10.Name = "button_10";
-			this.button_10.Size = new System.Drawing.Size(100, 100);
+			this.button_10.Size = new System.Drawing.Size(133, 125);
 			this.button_10.TabIndex = 2;
 			this.button_10.UseVisualStyleBackColor = true;
 			this.button_10.Click += new System.EventHandler(this.GameButton_Click);
 			// 
 			// button_11
 			// 
-			this.button_11.Location = new System.Drawing.Point(288, 232);
+			this.button_11.Location = new System.Drawing.Point(384, 290);
+			this.button_11.Margin = new System.Windows.Forms.Padding(4);
 			this.button_11.Name = "button_11";
-			this.button_11.Size = new System.Drawing.Size(100, 100);
+			this.button_11.Size = new System.Drawing.Size(133, 125);
 			this.button_11.TabIndex = 2;
 			this.button_11.UseVisualStyleBackColor = true;
 			this.button_11.Click += new System.EventHandler(this.GameButton_Click);
 			// 
 			// button_12
 			// 
-			this.button_12.Location = new System.Drawing.Point(394, 232);
+			this.button_12.Location = new System.Drawing.Point(525, 290);
+			this.button_12.Margin = new System.Windows.Forms.Padding(4);
 			this.button_12.Name = "button_12";
-			this.button_12.Size = new System.Drawing.Size(100, 100);
+			this.button_12.Size = new System.Drawing.Size(133, 125);
 			this.button_12.TabIndex = 2;
 			this.button_12.UseVisualStyleBackColor = true;
 			this.button_12.Click += new System.EventHandler(this.GameButton_Click);
 			// 
 			// button_20
 			// 
-			this.button_20.Location = new System.Drawing.Point(182, 338);
+			this.button_20.Location = new System.Drawing.Point(243, 422);
+			this.button_20.Margin = new System.Windows.Forms.Padding(4);
 			this.button_20.Name = "button_20";
-			this.button_20.Size = new System.Drawing.Size(100, 100);
+			this.button_20.Size = new System.Drawing.Size(133, 125);
 			this.button_20.TabIndex = 2;
 			this.button_20.UseVisualStyleBackColor = true;
 			this.button_20.Click += new System.EventHandler(this.GameButton_Click);
 			// 
 			// button_21
 			// 
-			this.button_21.Location = new System.Drawing.Point(288, 338);
+			this.button_21.Location = new System.Drawing.Point(384, 422);
+			this.button_21.Margin = new System.Windows.Forms.Padding(4);
 			this.button_21.Name = "button_21";
-			this.button_21.Size = new System.Drawing.Size(100, 100);
+			this.button_21.Size = new System.Drawing.Size(133, 125);
 			this.button_21.TabIndex = 2;
 			this.button_21.UseVisualStyleBackColor = true;
 			this.button_21.Click += new System.EventHandler(this.GameButton_Click);
 			// 
 			// button_22
 			// 
-			this.button_22.Location = new System.Drawing.Point(394, 338);
+			this.button_22.Location = new System.Drawing.Point(525, 422);
+			this.button_22.Margin = new System.Windows.Forms.Padding(4);
 			this.button_22.Name = "button_22";
-			this.button_22.Size = new System.Drawing.Size(100, 100);
+			this.button_22.Size = new System.Drawing.Size(133, 125);
 			this.button_22.TabIndex = 2;
 			this.button_22.UseVisualStyleBackColor = true;
 			this.button_22.Click += new System.EventHandler(this.GameButton_Click);
@@ -149,9 +160,10 @@
 			// StopApp
 			// 
 			this.StopApp.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.StopApp.Location = new System.Drawing.Point(229, 453);
+			this.StopApp.Location = new System.Drawing.Point(305, 566);
+			this.StopApp.Margin = new System.Windows.Forms.Padding(4);
 			this.StopApp.Name = "StopApp";
-			this.StopApp.Size = new System.Drawing.Size(210, 37);
+			this.StopApp.Size = new System.Drawing.Size(280, 46);
 			this.StopApp.TabIndex = 1;
 			this.StopApp.Text = "關閉";
 			this.StopApp.UseVisualStyleBackColor = true;
@@ -162,9 +174,10 @@
 			this.radioButton1.AutoSize = true;
 			this.radioButton1.Checked = true;
 			this.radioButton1.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.radioButton1.Location = new System.Drawing.Point(409, 75);
+			this.radioButton1.Location = new System.Drawing.Point(545, 94);
+			this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
 			this.radioButton1.Name = "radioButton1";
-			this.radioButton1.Size = new System.Drawing.Size(71, 16);
+			this.radioButton1.Size = new System.Drawing.Size(88, 19);
 			this.radioButton1.TabIndex = 3;
 			this.radioButton1.TabStop = true;
 			this.radioButton1.Text = "玩家先手";
@@ -173,18 +186,19 @@
 			// radioButton2
 			// 
 			this.radioButton2.AutoSize = true;
-			this.radioButton2.Location = new System.Drawing.Point(409, 96);
+			this.radioButton2.Location = new System.Drawing.Point(545, 120);
+			this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
 			this.radioButton2.Name = "radioButton2";
-			this.radioButton2.Size = new System.Drawing.Size(71, 16);
+			this.radioButton2.Size = new System.Drawing.Size(88, 19);
 			this.radioButton2.TabIndex = 3;
 			this.radioButton2.Text = "電腦先手";
 			this.radioButton2.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(684, 518);
+			this.ClientSize = new System.Drawing.Size(912, 648);
 			this.Controls.Add(this.radioButton2);
 			this.Controls.Add(this.radioButton1);
 			this.Controls.Add(this.button_22);
@@ -199,6 +213,7 @@
 			this.Controls.Add(this.StopApp);
 			this.Controls.Add(this.startGame);
 			this.Controls.Add(this.label1);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.ResumeLayout(false);

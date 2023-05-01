@@ -33,12 +33,12 @@ namespace OOXX
 			buttonList.Add(button_20);
 			buttonList.Add(button_21);
 			buttonList.Add(button_22);
-            foreach (var item in buttonList)
-            {
+			foreach (var item in buttonList)
+			{
 				item.Enabled = false;
-            }
-            //CheckPathExists();
-            xPath = Image.FromFile(codePath + "Img/img_X.jpg");
+			}
+			//CheckPathExists();
+			xPath = Image.FromFile(codePath + "Img/img_X.jpg");
 			oPath = Image.FromFile(codePath + "Img/img_O.jpg");
 			CheckPathExists();
 			npc_img = oPath;
@@ -83,6 +83,7 @@ namespace OOXX
 			// 設定玩家參數為1
 			arr[Convert.ToInt32(pos[0] - '0'), Convert.ToInt32(pos[1] - '0')] = 1;
 			CheckWin(true);
+			ifFinal();
 			// 電腦下棋
 			NpcPlay();
 			CheckWin(false);
@@ -220,11 +221,7 @@ namespace OOXX
 			
 			if (playerWinFlag || npcWinFlag)
 			{
-				MessageBox.Show(playerWinFlag ? "玩家勝利" : "電腦勝利");
-				foreach (var item in buttonList)
-				{
-					item.Enabled = false;
-				}
+				gameOver(playerWinFlag ?  "玩家勝利" : "電腦勝利");
 			}
 			return false;
 		}
@@ -276,6 +273,32 @@ namespace OOXX
 				return true;
 			}
 			return false;
+		}
+
+		private void ifFinal()
+		{
+			bool flag = true;
+			foreach(var item in arr)
+			{
+				if (item == spacePos)
+				{
+					flag = false;
+					break;
+				}
+			}
+			if (flag)
+			{
+				gameOver("雙方平局");
+			}
+		}
+
+		private void gameOver(string str)
+		{
+			MessageBox.Show(str);
+			foreach (var item in buttonList)
+			{
+				item.Enabled = false;
+			}
 		}
 
 		private void CheckPathExists()
